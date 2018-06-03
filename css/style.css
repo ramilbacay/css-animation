@@ -1,0 +1,203 @@
+	.glow {
+		position: absolute;
+		z-index: 1;
+		animation: glow 1s ease-in-out;
+	}
+
+		@-webkit-keyframes glow {
+			from {
+				width: 300px;
+				height: 250px;
+				border-color: #95b6d6;
+				border-width: 100px;
+				border-radius: 50%;
+				background-color: #d4d5d8;
+				-webkit-transform: scale(1);
+				opacity: 0;
+
+			}
+			to {
+				width: 290px;
+				height: 250px;
+				border-width: 100px;
+				border-color: #95b6d6;
+				border-radius: 50%;
+				background-color: #d4d5d8;
+				-webkit-transform: scale(0.1);
+				opacity: 0.3;
+			}
+		}
+
+	.bg {
+		display: flex;
+		vertical-align: center;
+		width: 300px;
+		height: 250px;
+		background-image: url("../assets/avengers_300x250_bg.jpg");
+		background-repeat: no-repeat;
+	}
+
+	.ironman {
+		background-image: url("../assets/avengers_300x250_ironman.png");
+		background-repeat: no-repeat;
+		width: 227px;
+		height: 250px;
+		position: relative;
+		left: 35%;
+		animation: grow 1s linear;
+	}
+
+		@-webkit-keyframes grow{
+			from {
+				-webkit-transform: scale(0.5);
+
+			}
+			to {
+				-webkit-transform: scale(1);
+			}	
+		}
+
+	.twitter {
+		background-image: url("../assets/avengers_300x250_social_twitter.png");
+		width: 15px; 
+		height: 19px;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: -20px;
+		left: 20px;
+		-webkit-animation: slide 1s forwards;
+		-webkit-animation-delay: 1s;
+	}
+	.twitter:hover {
+		background-image: url("../assets/avengers_300x250_social_twitter_active.png");
+		background-repeat: no-repeat;
+		width: 15px; 
+		height: 19px;
+		top: 15px;
+		left: 20px;
+	}
+
+	.fb {
+		background-image: url("../assets/avengers_300x250_social_fb.png");
+		background-repeat: no-repeat;
+		width: 11px; 
+		height: 18px;
+		position: absolute;
+		top: -20px;
+		left: 45px;
+		-webkit-animation: slide 1s forwards;
+		-webkit-animation-delay: 1s;
+	}
+	.fb:hover {
+		background-image: url("../assets/avengers_300x250_social_fb_active.png");
+		background-repeat: no-repeat;
+		width: 15px; 
+		height: 19px;
+		top: 15px;
+		left: 45px;
+	}
+
+	.yt {
+		background-image: url("../assets/avengers_300x250_social_yt.png");
+		background-repeat: no-repeat;
+		width: 19px; 
+		height: 19px;
+		position: absolute;
+		top: -20px;
+		left: 65px;
+		-webkit-animation: slide 1s forwards;
+		-webkit-animation-delay: 1s;
+	}
+	.yt:hover {
+		background-image: url("../assets/avengers_300x250_social_yt_active.png");
+		background-repeat: no-repeat;
+		width: 19px; 
+		height: 19px;
+		top: 15px;
+		left: 65px;
+	}
+
+		@-webkit-keyframes slide{
+			100% {
+				top: 15px;
+			}	
+		}
+
+
+	.avengers {
+		background-image: url("../assets/avengers_300x250_tt.png");
+		background-repeat: no-repeat;
+		width: 273px;
+		height: 113px; 
+		position: absolute;
+		left: -293px;
+		top: 160px;
+		-webkit-animation: slideLeft 1s forwards;
+		-webkit-animation-delay: 1s;
+	}
+
+		@-webkit-keyframes slideLeft{
+			100% {
+				left: -35px;
+			}	
+		}
+
+
+	.a {
+		background-image: url("../assets/avengers_300x250_exp_button.png");
+		background-repeat: no-repeat;
+		width: 50px;
+		height: 56px;
+		position: absolute;
+		top: 190px;
+		left: 250px;
+		opacity: 0;
+		-webkit-animation:  fadeIn 1s forwards;
+		-webkit-animation-delay: 2s;
+	}
+
+		@-webkit-keyframes fadeIn{
+			100% {
+				opacity: 1;
+			}
+		}
+
+	.a:hover {
+		background-image: url("../assets/avengers_300x250_exp_button_active.png");
+		background-repeat: no-repeat;
+		width: 50px;
+		height: 56px;
+		position: absolute;
+		top: 190px;
+		left: 250px;
+	}	
+
+	.assemble {
+		font-family: 'Aldrich', sans-serif;
+		z-index: 2;
+		color: white;
+		font-style: italic;
+		position: absolute;
+		top: 2px;
+		left: 350px;
+		-webkit-animation:  slideRight 1s forwards;
+		-webkit-animation-delay: 1s;
+	}
+
+		@-webkit-keyframes slideRight{
+			100% {
+				left: 120px;
+			}
+		}
+
+	.button {
+		margin: 10px;
+		border-radius: 5px;
+		background-color: black;
+		color: white;
+		width: 100px;
+		height: 30px;
+	}
+	.button:hover {
+		cursor: pointer;
+	}
